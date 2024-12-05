@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_day1_intro/pages/home_page.dart';// import the homepage 
+import 'package:flutter_day1_intro/pages/home_page.dart';
+
+import 'package:flutter_day1_intro/pages/page2.dart';// import the homepage 
 
 // flutter package , very importernt 
 // ثابت دايم كذا المين

@@ -1,33 +1,60 @@
 import 'package:flutter/material.dart';
-// write stl for short cut
-class homepage extends StatelessWidget{
+import 'package:flutter_day1_intro/pages/page2.dart';
 
-  const homepage ({super.key});
+// write stl for short cut
+class homepage extends StatelessWidget {
+  const homepage({super.key});
 
   @override
-  // need to put the functionfrom statless 
+  // need to put the functionfrom statless
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent.shade200,title: Text("home"),
-      ),//app bar of us 
-      body: Column(
-        children: [
-          Container(
-          height: 100,
-        width: 200,
-        color: Colors.blue.shade200,
-        child: Text("menu")// the content inside the container,
-          ),
-           Container(
-          height: 100,
-        width: 200,
-        color: Colors.red.shade200,
-        child: Text("menu")// the content inside the container,
-          )
+        actions: const [
+          Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+            Icon(
+              Icons.menu_book,
+              color: Color.fromARGB(255, 28, 14, 116),
+            ),
+          ])
         ],
-      ),// same as dev
-
+        backgroundColor: Colors.blueAccent.shade200,
+        title: Text("welecome"),
+      ), //app bar of us
+      body: Padding(
+        padding: const EdgeInsets.only(top: 30, left: 20),
+        child: Container(
+            height: 500,
+            width: 400,
+            color: const Color.fromARGB(255, 130, 199, 255),
+            child: Column(
+              children: [
+                Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Icon(Icons.games_sharp),
+                      const Text(
+                        "click to play",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const Page2()));
+                        },
+                        child: const Text("play"),
+                      ),
+                    ]),
+                
+              ],
+            )),
+      ), // same as dev
     );
   }
 }
