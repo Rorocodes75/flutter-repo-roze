@@ -60,22 +60,23 @@ class Page2 extends StatelessWidget {
                     color: const Color.fromARGB(255, 64, 140, 255),
                     child: const Column(
                       children: [
-                        Text(
-                          "Rules are simple have fun!",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            color: Color.fromRGBO(215, 215, 229, 1),
-                            fontSize: 18,
-                          )
-                        ),
+                        Text("Rules are simple have fun!",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color.fromRGBO(215, 215, 229, 1),
+                              fontSize: 18,
+                            )),
                         Row(
-                           mainAxisAlignment:MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                          Text("Just have fun" , style: TextStyle(fontSize: 16),),
-                          Icon(Icons.run_circle),
-                        ],)
+                            Text(
+                              "Just have fun",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            Icon(Icons.run_circle),
+                          ],
+                        )
                       ],
-
                     )),
               ],
             )),
