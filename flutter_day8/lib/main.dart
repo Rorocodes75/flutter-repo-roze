@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_day8/service/api.dart';
 
 void main() {
+  Api().gitdata();
   runApp(const MainApp());
 }
 
