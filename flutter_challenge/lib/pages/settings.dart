@@ -93,12 +93,17 @@ class _SettingsState extends State<Settings> {
               ),
             ),
           ),
-          const Column(
+          Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Icon(Icons.currency_exchange),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 229, 116, 116),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: Icon(Icons.currency_exchange)),
                   Icon(Icons.card_giftcard),
                   Icon(Icons.message),
                   Icon(Icons.room_service),
@@ -115,92 +120,88 @@ class _SettingsState extends State<Settings> {
               ),
             ],
           ),
-               Padding(
-                 padding: const EdgeInsets.all(8.0),
-                 child: Column(
-                  
-                   children: [
-                     Container(
-                      width: 400,
-                      height: 100,
-                      color: const Color.fromARGB(97, 247, 236, 236),
-                      child: Card(
-                          color: const Color.fromARGB(243, 255, 250, 250),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(Icons.edit_location),
-                              Text(" address"),
-                            ],
-                          ),
-                      ),
-                                   ),
-                      Container(
-                        width: 400,
-                        height: 100,
-                        color: const Color.fromARGB(97, 247, 236, 236),
-                        child: Card(
-                          color: const Color.fromARGB(243, 255, 250, 250),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(Icons.privacy_tip),
-                              Text(" privacy"),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Container(
-                        width: 400,
-                        height: 100,
-                        color: const Color.fromARGB(97, 247, 236, 236),
-                        child: Card(
-                          color: const Color.fromARGB(243, 255, 250, 250),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(Icons.all_inbox),
-                              Text(" genral"),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Container(
-                        width: 400,
-                        height: 100,
-                        color: const Color.fromARGB(97, 247, 236, 236),
-                        child: Card(
-                          color: const Color.fromARGB(243, 255, 250, 250),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(Icons.notification_add),
-                              Text(" notification"),
-                            ],
-                          ),
-                        ),
-                      ),
-                      Container(
-                        width: 400,
-                        height: 100,
-                        color: const Color.fromARGB(97, 247, 236, 236),
-                        child: Card(
-
-                          color: const Color.fromARGB(243, 255, 250, 250),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
-                            children: [
-                              Icon(Icons.support),
-                              Text(" support"),
-                            ],
-                          ),
-                        ),
-                      ),
-                   ],
-                 ),
-               ),
-              
-
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                Container(
+                  width: 400,
+                  height: 100,
+                  color: const Color.fromARGB(97, 247, 236, 236),
+                  child: Card(
+                    color: const Color.fromARGB(243, 255, 250, 250),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(Icons.edit_location),
+                        Text(" address"),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 400,
+                  height: 100,
+                  color: const Color.fromARGB(97, 247, 236, 236),
+                  child: Card(
+                    color: const Color.fromARGB(243, 255, 250, 250),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(Icons.privacy_tip),
+                        Text(" privacy"),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 400,
+                  height: 100,
+                  color: const Color.fromARGB(97, 247, 236, 236),
+                  child: Card(
+                    color: const Color.fromARGB(243, 255, 250, 250),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(Icons.all_inbox),
+                        Text(" genral"),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 400,
+                  height: 100,
+                  color: const Color.fromARGB(97, 247, 236, 236),
+                  child: Card(
+                    color: const Color.fromARGB(243, 255, 250, 250),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(Icons.notification_add),
+                        Text(" notification"),
+                      ],
+                    ),
+                  ),
+                ),
+                Container(
+                  width: 400,
+                  height: 100,
+                  color: const Color.fromARGB(97, 247, 236, 236),
+                  child: Card(
+                    color: const Color.fromARGB(243, 255, 250, 250),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(Icons.support),
+                        Text(" support"),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
