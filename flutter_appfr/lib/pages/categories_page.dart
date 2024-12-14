@@ -79,7 +79,7 @@ class CategoriesPage extends StatelessWidget {
                     ),
                   );
                 } else {
-                  return Text("no data");
+                  return Text("there's no data ");
                 }
               }),
         ));
