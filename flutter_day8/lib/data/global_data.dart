@@ -1,3 +1,3 @@
-import 'package:flutter_day8/models/character.dart';
+import "package:flutter_day8/models/character.dart";
 
-List <Character> allCharacter=[];
+List<Character> allCharacters = [];
